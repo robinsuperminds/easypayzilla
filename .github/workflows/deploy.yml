@@ -14,5 +14,5 @@ jobs:
           key: ${{ secrets.SSH_PRIVATE_KEY }}
           port: 22
           script: |
-            cd /var/www/easypayzilla.com/html/
+            cd /var/www/easypayzilla.com/html/easypayzilla/html
             git pull
