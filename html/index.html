@@ -1,0 +1,1088 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    
+<title>easypayzilla
+</title>
+                
+        
+<link rel="shortcut icon" href="https://app.marketingblocks.ai/image/favico.png">
+        
+<meta charset="utf-8">
+
+<meta name="csrf-token" content="{{ csrf_token() }}">
+    
+<meta name="description" content="">
+    
+<meta name="referrer" content="origin-when-crossorigin" id="meta_referrer">
+    
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    
+<link href="https://app.marketingblocks.ai/css/app.css" rel="stylesheet">
+
+    
+<link rel="stylesheet" type="text/css" href="./css/animations.css" rel="stylesheet">
+    
+<link rel="stylesheet" type="text/css" href="./css/font-awesome.min.css">
+    
+<link rel="stylesheet" type="text/css" href="./css/layout-editor.css">
+    
+<link rel="stylesheet" type="text/css" href="./css/color.css">
+    
+<link rel="stylesheet" type="text/css" href="./css/editor.css">
+    
+<link rel="stylesheet" type="text/css" href="./css/section.css">
+    
+<link rel="stylesheet" type="text/css" href="./css/elements.css">
+    
+<link rel="stylesheet" type="text/css" href="./css/ci-layout.css">
+    
+<link rel="stylesheet" type="text/css" href="./css/jquery.toast.min.css">
+    
+<link rel="stylesheet" type="text/css" href="./css/slick.css">
+    
+<link rel="stylesheet" type="text/css" href="./css/slick-theme.css">
+    
+<link rel="stylesheet" type="text/css" href="./css/owl.carousel.min.css">
+    
+    
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+     
+<link href="https://fonts.googleapis.com/css?family=sans-serif:700,700italic|Abel:regular|Acme:regular|Advent+Pro:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Aguafina+Script:regular|Alex+Brush:regular|Allan:regular,700|Amatic+SC:regular,700|Amiri:regular,italic,700,700italic|Anton:regular|Archivo+Black:regular|Archivo+Narrow:regular,500,600,700,italic,500italic,600italic,700italic|Arimo:regular,500,600,700,italic,500italic,600italic,700italic|Arizonia:regular|Arvo:regular,italic,700,700italic|Audiowide:regular|Bad+Script:regular|Baloo+2:regular,500,600,700,800|Barlow:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic|Barlow+Condensed:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic|Barlow+Semi+Condensed:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic|Bebas+Neue:regular|Bellota:300,300italic,regular,italic,700,700italic|BioRhyme:200,300,regular,700,800|Bitter:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Bree+Serif:regular|Bungee+Inline:regular|Cabin:regular,500,600,700,italic,500italic,600italic,700italic|Cabin+Condensed:regular,500,600,700|Carter+One:regular|Caveat:regular,500,600,700|Cedarville+Cursive:regular|Cinzel:regular,500,600,700,800,900|Comfortaa:300,regular,500,600,700|Cookie:regular|Cormorant:300,regular,500,600,700,300italic,italic,500italic,600italic,700italic|Cormorant+Garamond:300,300italic,regular,italic,500,500italic,600,600italic,700,700italic|Cormorant+Infant:300,300italic,regular,italic,500,500italic,600,600italic,700,700italic|Cormorant+SC:300,regular,500,600,700|Cormorant+Unicase:300,regular,500,600,700|Courgette:regular|Crimson+Text:regular,italic,600,600italic,700,700italic|Damion:regular|Dancing+Script:regular,500,600,700|Didact+Gothic:regular|Dosis:200,300,regular,500,600,700,800|EB+Garamond:regular,500,600,700,800,italic,500italic,600italic,700italic,800italic|Encode+Sans:100,200,300,regular,500,600,700,800,900|Encode+Sans+Condensed:100,200,300,regular,500,600,700,800,900|Encode+Sans+Expanded:100,200,300,regular,500,600,700,800,900|Encode+Sans+Semi+Condensed:100,200,300,regular,500,600,700,800,900|Encode+Sans+Semi+Expanded:100,200,300,regular,500,600,700,800,900|Ewert:regular|Exo+2:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Faster+One:regular|Fira+Mono:regular,500,700|Fira+Sans:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic|Fjalla+One:regular|Fondamento:regular,italic|Galada:regular|Gloria+Hallelujah:regular|Gochi+Hand:regular|Gotu:regular|Great+Vibes:regular|Handlee:regular|Hind:300,regular,500,600,700|Hind+Guntur:300,regular,500,600,700|Hind+Madurai:300,regular,500,600,700|Hind+Siliguri:300,regular,500,600,700|Hind+Vadodara:300,regular,500,600,700|Homemade+Apple:regular|Inconsolata:200,300,regular,500,600,700,800,900|Indie+Flower:regular|Inter:100,200,300,regular,500,600,700,800,900|Istok+Web:regular,italic,700,700italic|Josefin+Sans:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic|Jost:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Kalam:300,regular,700|Kanit:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic|Karla:200,300,regular,500,600,700,800,200italic,300italic,italic,500italic,600italic,700italic,800italic|Kaushan+Script:regular|Kelly+Slab:regular|Kite+One:regular|Knewave:regular|Kristi:regular|Krona+One:regular|Lalezar:regular|Lato:100,100italic,300,300italic,regular,italic,700,700italic,900,900italic|League+Gothic:regular|Leckerli+One:regular|Lekton:regular,italic,700|Lexend:100,200,300,regular,500,600,700,800,900|Lexend+Deca:100,200,300,regular,500,600,700,800,900|Lexend+Exa:100,200,300,regular,500,600,700,800,900|Lexend+Giga:100,200,300,regular,500,600,700,800,900|Lexend+Mega:100,200,300,regular,500,600,700,800,900|Lexend+Peta:100,200,300,regular,500,600,700,800,900|Lexend+Tera:100,200,300,regular,500,600,700,800,900|Lexend+Zetta:100,200,300,regular,500,600,700,800,900|Libre+Baskerville:regular,italic,700|Libre+Franklin:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Lobster:regular|Lobster+Two:regular,italic,700,700italic|Lora:regular,500,600,700,italic,500italic,600italic,700italic|Manrope:200,300,regular,500,600,700,800|Marck+Script:regular|Marmelad:regular|Maven+Pro:regular,500,600,700,800,900|Merriweather:300,300italic,regular,italic,700,700italic,900,900italic|Merriweather+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic|Monoton:regular|Montez:regular|Montserrat:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Montserrat+Alternates:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic&display=swap" rel="stylesheet" type='text/css'>
+   
+    
+<link href="https://fonts.googleapis.com/css?family=Montserrat+Subrayada:regular,700|Mr+Dafoe:regular|Mulish:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|News+Cycle:regular,700|Niconne:regular|Niramit:200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic|Nobile:regular,italic,500,500italic,700,700italic|Norican:regular|Notable:regular|Noto+Sans:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic|Noto+Sans+JP:100,300,regular,500,700,900|Noto+Serif:regular,italic,700,700italic|Nunito:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Nunito+Sans:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,800,800italic,900,900italic|Old+Standard+TT:regular,italic,700|Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic|Orbitron:regular,500,600,700,800,900|Oswald:200,300,regular,500,600,700|Overpass:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Overpass+Mono:300,regular,500,600,700|Oxygen:300,regular,700|Oxygen+Mono:regular|PT+Sans:regular,italic,700,700italic|PT+Serif:regular,italic,700,700italic|Pacifico:regular|Palanquin:100,200,300,regular,500,600,700|Palanquin+Dark:regular,500,600,700|Parisienne:regular|Passion+One:regular,700,900|Patua+One:regular|Permanent+Marker:regular|Philosopher:regular,italic,700,700italic|Pinyon+Script:regular|Play:regular,700|Playball:regular|Playfair+Display:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic|Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic|Proza+Libre:regular,italic,500,500italic,600,600italic,700,700italic,800,800italic|Public+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Quicksand:300,regular,500,600,700|Rajdhani:300,regular,500,600,700|Raleway:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Rambla:regular,italic,700,700italic|Rammetto+One:regular|Red+Hat+Display:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic|Red+Hat+Text:300,regular,500,600,700,300italic,italic,500italic,600italic,700italic|Reenie+Beanie:regular|Righteous:regular|Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic|Roboto+Condensed:300,300italic,regular,italic,700,700italic|Roboto+Mono:100,200,300,regular,500,600,700,100italic,200italic,300italic,italic,500italic,600italic,700italic|Roboto+Slab:100,200,300,regular,500,600,700,800,900|Rochester:regular|Rock+Salt:regular|Ropa+Sans:regular,italic|Rubik:300,regular,500,600,700,800,900,300italic,italic,500italic,600italic,700italic,800italic,900italic|Ruda:regular,500,600,700,800,900|Rufina:regular,700|Sacramento:regular|Saira:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Saira+Condensed:100,200,300,regular,500,600,700,800,900|Saira+Extra+Condensed:100,200,300,regular,500,600,700,800,900|Saira+Semi+Condensed:100,200,300,regular,500,600,700,800,900|Sarabun:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic|Sarala:regular,700|Satisfy:regular|Sen:regular,700,800|Shrikhand:regular|Sigmar+One:regular|Signika:300,regular,500,600,700|Signika+Negative:300,regular,500,600,700|Six+Caps:regular|Slabo+27px:regular|Sofia:regular|Source+Code+Pro:200,300,regular,500,600,700,800,900,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Source+Sans+Pro:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,900,900italic|Space+Mono:regular,italic,700,700italic|Spectral:200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic|Spectral+SC:200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic|Spicy+Rice:regular|Srisakdi:regular,700|Staatliches:regular|Syncopate:regular,700|Tajawal:200,300,regular,500,700,800,900|Tangerine:regular,700|Teko:300,regular,500,600,700|Tenor+Sans:regular|Tinos:regular,italic,700,700italic|Titan+One:regular|Titillium+Web:200,200italic,300,300italic,regular,italic,600,600italic,700,700italic,900|Trispace:100,200,300,regular,500,600,700,800|Turret+Road:200,300,regular,500,700,800|Ubuntu:300,300italic,regular,italic,500,500italic,700,700italic|Ubuntu+Condensed:regular|Ubuntu+Mono:regular,italic,700,700italic|Ultra:regular|Unica+One:regular|Varela:regular|Varela+Round:regular|Vast+Shadow:regular|Vollkorn:regular,500,600,700,800,900,italic,500italic,600italic,700italic,800italic,900italic|Work+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic|Yanone+Kaffeesatz:200,300,regular,500,600,700|Zilla+Slab:300,300italic,regular,italic,500,500italic,600,600italic,700,700italic&display=swap" rel="stylesheet" type='text/css'>
+    
+<script src="./js/app.js">
+</script>
+    
+<script src="./js/jquery-3.2.1.min.js">
+</script>
+    
+<script type="text/javascript" src="./js/jquery.toast.min.js">
+</script>
+    
+<script src="./js/slick.js" type="text/javascript" charset="utf-8">
+</script>
+    
+<script src="./js/owl.carousel.min.js" type="text/javascript">
+</script>
+    
+<script src="./js/confitti.min.js" type="text/javascript">
+</script>
+    
+<script src="./js/download_page.js" type="text/javascript">
+</script>
+
+
+    
+<script>
+      function resizeIframe(obj) {
+        
+      }
+    
+</script>
+    
+<style type="text/css">
+        .rce-landinpage-inner{
+            display: block !important;
+        }
+        .rce-device-iframe{
+            display: none !important;
+        }
+    
+</style>
+
+        
+</head>
+
+<body>
+    	
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" crossorigin="anonymous">
+	
+<style type="text/css">
+		 .rc-modal {
+		    width: 800px;
+		    top: calc(50VH - 265px);
+		    padding: 60px 120px;
+		}
+		.none-show-page{
+			display: none !important;
+		}
+	   
+		.timer-bar-fixed{
+			position: fixed !important;
+			width: 100% !important;
+			top: 0px;
+			z-index: 100;
+		}  
+		#signup_modal{
+			bottom: unset;
+		}
+		.ci-pbm-wrap{
+			bottom: 20px;
+			right: 20px;
+		}
+		.rce-element-resize-handle:after{
+			content: unset !important;
+		}
+		.rce-column-blank{
+			display: none;
+		}
+		.rce-column{
+			border: 0px;
+		}
+	
+</style>
+	
+<div data-title="section" class="rc-modal rce-block" id="signup_modal" data-desktop_bg_img="none" data-desktop_bg_color="rgb(255, 255, 255)" _msthidden="2" data-desktop_style="position: fixed; bottom: unset; top: calc(50vh - 280px); padding: 60px 80px; display: none;">
+
+<div class="rc-loading-overlay-wrap">
+</div>
+
+<div class="rc-modal-progress-wrap">
+
+</div>
+
+<div class="rc-modal-header" style="height:unset; background-color: transparent;" _msthidden="2">
+
+<div>
+</div>
+
+<div data-title="text" id="rce_signup_ele_popup_title" class="rce-element rce-text rc-modal-header-title" _msttexthash="565526" _msthidden="1" _msthash="2160">Yes, Please Send Me More Info
+</div>
+
+<div data-title="text" id="rce_signup_ele_popup_subtitle" class="rce-element rce-text" _msttexthash="748709" _msthidden="1" _msthash="2161">
+Please Enter Your Details Below:
+
+</div>
+
+<div class="rc-modal-close" style="right: -15px; top: -15px;  background-color: black !important; border: 2px solid white; box-shadow: -1px 1px 2px black;">
+<i class="fa fa-times">
+</i>
+</div>
+
+</div>
+
+<div class="rc-modal-content" style="padding-top: 20px;" _msthidden="2">
+
+<form action="" method="post" enctype="multipart/form-data" _msthidden="2">
+
+<input type="hidden" name="_token" value="wzPRZSmxBNRN5ebncdDBJfNcCfGcgKDdNwIZqSIZ"> 
+<div _msthidden="1">
+
+<input class="form-control rc-required rce-element rce-input for-device" data-title="input" type="text" name="user_name" id="rce_signup_ele_popup_name" placeholder="Your Name" required="" _msthidden="A" _mstplaceholder="111241" _msthash="2162">
+
+</div>
+
+<div style="margin-top: 10px;" _msthidden="1">
+
+<input class="form-control rc-required rce-element rce-input for-device" data-title="input" type="email" name="email" id="rce_signup_ele_popup_email" placeholder="Your Email" required="" _msthidden="A" _mstplaceholder="131586" _msthash="2163">
+
+</div>
+<div class="rce-custom-field" style="display: block;">
+</div>
+
+<div style="margin: 10px 0px;" _msthidden="1">
+
+<button data-title="button" type="button" class="rce-element rce-button btn rce-direct-signup-btn for-device" id="rce_signup_ele_popup_submit" _msthidden="1">
+<span contenteditable="true" _msttexthash="229047" _msthidden="1" _msthash="2164">Get Access Now &gt;&gt;
+</span>
+</button>
+
+</div>
+
+<div _msthidden="1">
+
+<button data-title="button" type="button" class="rce-element rce-button btn facebook-signup-btn for-device" id="rce_signup_ele_popup_facebook" _msthidden="1">
+<span contenteditable="true" _msttexthash="336232" _msthidden="1" _msthash="2165">Log in With Facebook
+</span>
+</button>
+
+</div>
+
+<div data-title="text" id="rce_signup_ele_popup_subtitle_1" class="rce-element rce-text" _msttexthash="1650129" _msthidden="1" _msthash="2166">
+* we will not spam, rent, or sell your information... *
+
+</div>
+
+</form>
+
+</div>
+
+</div>
+
+<div data-title="section" class="rc-modal rce-block mCS_destroyed" id="rce_exit_popup_modal" data-status="no" data-desktop_bg_img="none" data-desktop_bg_color="rgb(255, 255, 255)" _msthidden="8" data-desktop_style="padding: 0px; position: fixed; font-size: 0px; bottom: unset; border-radius: 10px; display: none;">
+
+<div class="rc-loading-overlay-wrap" _msthidden="8">
+</div>
+
+<div class="rc-modal-header" style="height:unset;" _msthidden="8">
+
+<div class="rc-modal-close" style="right: 10px; top: 10px;  background-color: black !important; border: 2px solid white; box-shadow: -1px 1px 2px black;">
+<i class="fa fa-times">
+</i>
+</div>
+
+</div>
+
+<div class="rc-modal-content" style="padding-top: 20px;" _msthidden="8">
+
+<div class="rce-flex" style="font-size: 0px; grid-gap: 20px;" _msthidden="5">
+
+<div id="rce_exit_popup_modal_7" class="">
+
+<div data-title="image" id="rce_exit_popup_modal_1" class="rce-element rce-image">
+
+<img src="https://app.marketingblocks.ai/upload/exit_img.png" style="width: 100%;" class="">
+
+</div>
+
+</div>
+
+<div _msthidden="5">
+
+<div style="padding: 20px;" _msthidden="5">
+
+<div data-title="text" id="rce_exit_popup_modal_2" class="rce-element rce-text" _msttexthash="239525" _msthidden="1" _msthash="2167">
+PSST, 
+<font style="text-decoration: underline;">BEFORE YOU
+</font> GO!
+
+</div>
+
+<div data-title="text" id="rce_exit_popup_modal_3" class="rce-element rce-text" _msttexthash="2859766" _msthidden="1" _msthash="2168">
+Your headline goes here..... Your headline goes here..... Your headline
+
+</div>
+
+<div data-title="text" id="rce_exit_popup_modal_4" class="rce-element rce-text" _msttexthash="2561026" _msthidden="1" _msthash="2169">
+Sub headline goes here..... Sub headline goes here..... Sub headline
+
+</div>
+
+<div class="rce-flex rce-text-500" style="margin-top: 40px; grid-gap: 20px;" _msthidden="2">
+
+<button type="button" data-title="button" id="rce_exit_popup_modal_5" class="rce-element rce-button for-device" _msthidden="1">
+<span contenteditable="true" _msttexthash="551772" _msthidden="1" _msthash="2170">yes, please! am interested
+</span>
+</button>
+
+<button type="button" data-title="button" id="rce_exit_popup_modal_6" class="rce-element rce-button for-device" _msthidden="1">
+<span contenteditable="true" _msttexthash="419679" _msthidden="1" _msthash="2171">no,i am not interested
+</span>
+</button>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+<div class="rce-page-element-border" id="rce_page_element_tool_wrap" data-desktop_style="left: 1666.67px; top: 72.5799px; display: none;">
+
+<span class="rce-page-element-tool-item" alt="edit" title="edit" data-title="edit">
+<i class="fa fa-edit">
+</i>
+</span>
+
+<span class="rce-page-element-tool-item" alt="remove" title="remove" data-title="remove">
+<i class="fa fa-trash">
+</i>
+</span>
+
+</div>
+
+<div class="rce-page-element-border rce-page-border-top" style="display: none; left: 310px; width: 1406.67px; top: 86.5799px;">
+</div>
+
+<div class="rce-page-element-border rce-page-border-right" style="display: none; left: 1716.67px; height: 1426.82px; top: 86.5799px;">
+</div>
+
+<div class="rce-page-element-border rce-page-border-left" style="display: none; left: 310px; height: 1426.82px; top: 86.5799px;">
+</div>
+
+<div class="rce-page-element-border rce-page-border-bottom" style="display: none; left: 310px; width: 1406.67px; top: 1513.4px;">
+</div>
+
+<div data-title="section" id="rce_section_8" class="rce-section rce-menu-section" data-desktop_bg_img="none" data-desktop_bg_color="#ffffff">	    
+<div class="rce-menu-row" style="padding: 20px 40px;">        
+<div class="rce-menu-logo-wrap">			
+<div class="rce-icon-title-ele rce-element rce-logo" data-title="logo" id="rce_section_8_1">        		
+<div class="rce-hide-icon rce-icon-ele rce-logo-img">        			
+<img src="https://app.marketingblocks.ai/upload/logo.png">        		
+</div>        		
+<div id="rce_section_8_1_1" class="rce-show-title rce-title-ele rce-logo-title rce-n-ai" data-ai_type="product_title">easypayzilla
+</div>        	
+</div>        
+</div>        
+<div class="rce-mega-menu-icon">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">                
+<path d="M3 12H21M3 6H21M3 18H21" stroke="#344054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+</path>            
+</svg>
+</div>        
+<div class="rce-element rce-menu-wrap" data-title="menu" id="rce_section_8_3" data-desktop_bg_color="rgba(0, 0, 0, 0)" data-desktop_bg_img="none">       		
+<div data-title="link_item" id="rce_section_8_3_2" class="rce-icon-title-ele rce-element rce-menu-item">                
+<div class="rce-icon-ele rce-hide-icon rce-menu-item-icon">
+</div>                
+<div class="rce-show-title rce-title-ele rce-menu-item-text">Solutions
+</div>            
+</div>            
+<div data-title="link_item" id="rce_section_8_3_1" class="rce-icon-title-ele rce-element rce-menu-item">                
+<div class="rce-icon-ele rce-hide-icon rce-menu-item-icon">
+</div>                
+<div class="rce-show-title rce-title-ele rce-menu-item-text">Products
+</div>            
+</div>                        
+<div data-title="link_item" id="rce_section_8_3_3" class="rce-icon-title-ele rce-element rce-menu-item">                
+<div class="rce-icon-ele rce-hide-icon rce-menu-item-icon">
+</div>                
+<div class="rce-show-title rce-title-ele rce-menu-item-text">About
+</div>            
+</div>            
+<div data-title="link_item" id="rce_section_8_3_4" class="rce-icon-title-ele rce-element rce-menu-item">                
+<div class="rce-icon-ele rce-hide-icon rce-menu-item-icon">
+</div>                
+<div class="rce-show-title rce-title-ele rce-menu-item-text">Contact
+</div>            
+</div>            
+<div class="rce-menu-btn-wrap" id="rce_section_8_3_5">                 
+<form method="post" class="rce-form rce-signup-form" id="rce_section_8_3_5_1_form" data-desktop_style="width: fit-content;">                    
+<input type="hidden" name="_token" value="lg32GjZjVoEKdwDOucmUi6Q2AeWMXe3d1zGMKjoL">                    
+<div class="rce-custom-field">
+</div>
+<div class="rce-flex">                        
+<button type="button" data-title="signup_btn" id="rce_section_8_3_5_1" class="rce-only-signup rce-element rce-button rce-signup-btn rce-popup-signup-btn for-device">
+<span contenteditable="true">Get started
+</span>
+</button>                    
+</div>                                              
+</form>            
+</div>        
+</div>    	    
+</div>    
+    
+
+                
+<div class="rce-insert-line rce-insert-line-bottom">
+</div>
+            
+</div>
+<div data-title="section" id="rce_section_2" class="rce-section rce-n-ai" data-ai_type="background_img" data-desktop_bg_img="https://images.pexels.com/photos/3767397/pexels-photo-3767397.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" data-desktop_bg_color="#ffffff00" data-keyword="payment" data-width_unit="px" data-border_radius_unit="px" data-desktop_style="background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url(&quot;https://images.pexels.com/photos/3767397/pexels-photo-3767397.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940&quot;); padding: 80px 0px; position: relative; filter: unset; margin-bottom: 96px; margin-top: 0px;">    
+<div style="width: 80%; position:absolute; left: 0px; top: 0px; height: 100%; background-image: linear-gradient(91.19deg, #cb04ac 3.45%, rgba(196, 196, 196, 0) 95.96%); ">
+</div>    
+<div class="container">        
+<div class="row">            
+<div class="col-md-8">                
+<div class="rce-vertical-box-start" style="grid-gap: 10px; padding:20px 10px; max-width: 600px;">                    
+<div data-title="text" id="rce_section_2_2" class="rce-element rce-text rce-n-ai" data-ai_type="Headline" data-desktop_style="font-size: 48px; line-height: 56px; font-weight: bold; color: #fff; font-family: 'Poppins'; width: auto; text-transform:capitalize;">EasyPayZilla: The Ultimate Online Payment Solution for Hassle Free Transactions!
+</div>                    
+<div data-title="text" id="rce_section_2_3" class="rce-element rce-text rce-n-ai" data-ai_type="Sub Headline" data-desktop_style="font-size: 18px; line-height: 24px;text-align:left; font-family: 'Poppins'; color: white; margin:20px 0px; text-transform: capitalize">Streamline your online payments with easypayzilla   the ultimate payment solution for hassle free transactions
+</div>                                         
+<form method="post" class="rce-form rce-signup-form for-device" id="rce_section_2_1_4">                        
+<input type="hidden" name="_token" value="lg32GjZjVoEKdwDOucmUi6Q2AeWMXe3d1zGMKjoL">                         
+<button type="button" data-title="signup_btn" id="rce_section_2_1_4_1" class="rce-element rce-button rce-signup-btn rce-popup-signup-btn" data-desktop_style_hover="background-color: rgb(143 26 31); color:white;" data-desktop_style="background-color: rgb(236, 48, 56); color: rgb(255, 255, 255); font-size: 18px; padding: 10px 20px; height: unset; line-height: 1.2em; font-family: Poppins; width: 200px; border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0);">
+<span contenteditable="true">Get Started
+</span>
+</button>                    
+</form>                
+</div>              
+</div>         
+</div>    
+</div>    
+    
+
+                
+<div class="rce-insert-line rce-insert-line-bottom">
+</div>
+            
+</div>
+<div data-title="section" id="rce_section_6" class="rce-section rce-n-ai" data-ai_type="background_img" data-desktop_bg_img="https://images.pexels.com/photos/6348124/pexels-photo-6348124.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" data-desktop_bg_color="rgba(0,0,0,0.5)" data-keyword="payment">    
+<div class="container">        
+<div id="rce_section_6_1" class="">            
+<div class="" style="padding:40px;">                
+<div data-title="text" id="rce_section_6_1_1" class="rce-text-600 rce-element rce-text rce-n-ai" data-ai_type="Headline">Unlock Seamless Online Payments with easypayzilla: Your Ultimate Payment Solution!
+</div>                
+<div data-title="text" id="rce_section_6_1_2" class="rce-text-600 rce-element rce-text rce-n-ai" data-ai_type="Sub Headline">Simplify your online transactions with easypayzilla, the ultimate payment solution for seamless online transactions
+</div>                
+<form method="post" class="rce-form rce-signup-form" id="rce_section_6_1_4" data-desktop_style="text-align: left; width:100%; margin-top: 40px;">                    
+<input type="hidden" name="_token" value="lg32GjZjVoEKdwDOucmUi6Q2AeWMXe3d1zGMKjoL">                    
+<div class="rce-custom-field">
+</div>
+<div class="rc-flex" style="grid-gap: 40px;">                         
+<button type="button" data-title="signup_btn" id="rce_section_6_1_4_1" class="rce-element rce-button rce-signup-btn rce-popup-signup-btn for-device">
+<span contenteditable="true">Get Started
+</span>
+</button>                                                  
+<button type="button" data-title="signup_btn" id="rce_section_6_1_4_2" class="rce-element rce-button rce-signup-btn rce-popup-signup-btn for-device">
+<span contenteditable="true">Contact Us
+</span>
+</button>                    
+</div>                
+</form>            
+</div>         
+</div>    
+</div>    
+    
+
+                
+<div class="rce-insert-line rce-insert-line-bottom">
+</div>
+            
+</div>
+<div data-title="section" id="rce_section_3" class="rce-section" data-desktop_bg_img="none" data-desktop_bg_color="rgba(255, 255, 255, 1)"> 
+<div class="container"> 
+<div class="row"> 
+<div class="col-md-6 col-xs-12 rce-d-p-40 rce-flex-start" style="text-align: center;  position: relative;"> 
+<div data-title="image" id="rce_section_3_6" class="rce-element rce-image rce-image rce-n-ai" data-ai_type="image" data-keyword="payment" data-image_type="img"> 
+<img src="https://images.pexels.com/photos/3769747/pexels-photo-3769747.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" style="width: 100%; border-radius: 20px;" class="mCS_img_loaded"> 
+</div> 
+</div> 
+<div class="col-md-6 col-xs-12 rce-d-p-40" style="display: flex; flex-flow: column; justify-content: center;"> 
+<div data-title="text" id="rce_section_3_2" class="rce-element rce-text rce-n-ai" data-ai_type="Company Motto" data-ai_category_type="benefit_section1_heading" _msttexthash="716950" _msthash="2187">Streamline Your Finances
+</div> 
+<div data-title="text" id="rce_section_3_3" class="rce-element rce-text rce-n-ai" data-ai_type="Bio" data-ai_category_type="benefit_section2_paragraph" _msttexthash="10939045" _msthash="2188">We prioritize your security and ensure that your payment information is protected. Feel confident knowing that your personal details are safe with easypayzilla.
+</div> 
+</div> 
+</div> 
+</div> 
+
+<div class="rce-insert-line rce-insert-line-bottom">
+</div>
+
+</div>
+<div data-title="section" id="rce_section_5" class="rce-section" data-desktop_bg_img="none" data-desktop_bg_color="rgba(255, 255, 255, 1)"> 
+<div class="container"> 
+<div class="row"> 
+<div class="col-md-6 col-xs-12 rce-d-p-40" style="display: flex; flex-flow: column; justify-content: center;"> 
+<div data-title="text" id="rce_section_5_2" class="rce-element rce-text rce-n-ai" data-ai_type="Company Motto" data-ai_category_type="benefit_section2_heading" _msttexthash="910871" _msthash="2189">Enhanced Security
+</div> 
+<div data-title="text" id="rce_section_5_3" class="rce-element rce-text rce-n-ai" data-ai_type="Bio" data-ai_category_type="benefit_section2_paragraph">We prioritize your security and ensure that your payment information is protected. Feel confident knowing that your personal details are safe with easypayzilla.
+</div> 
+</div> 
+<div class="col-md-6 col-xs-12 rce-d-p-40 rce-flex-start" style="text-align: center;  position: relative;"> 
+<div data-title="image" id="rce_section_5_6" class="rce-element rce-image rce-image rce-n-ai" data-ai_type="image" data-keyword="payment" data-image_type="img"> 
+<img src="https://images.pexels.com/photos/3767397/pexels-photo-3767397.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" style="width: 100%; border-radius: 20px;" class="mCS_img_loaded"> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+<div class="rce-insert-line rce-insert-line-bottom">
+</div>
+
+</div>
+<div data-title="section" id="rce_section_4" class="rce-section" data-desktop_bg_img="about-7-1.png" data-desktop_bg_color="#000000d4"> 
+<div class="container"> 
+<div class="row"> 
+<div class="col-md-6"> 
+<div class="rce-vertical-box-start" style="grid-gap: 10px;"> 
+<div data-title="text" id="rce_section_4_1_1" class="rce-element rce-text rce-n-ai" data-ai_type="Company Motto" data-ai_category_type="why_us_section_heading" _msttexthash="432939" _msthash="2192">Why Choose easypayzilla?
+</div> 
+<div data-title="text" id="rce_section_4_1_2" class="rce-element rce-text rce-n-ai" data-ai_type="Bio" data-ai_category_type="why_us_section_paragraph" _msttexthash="19440083" _msthash="2193">easypayzilla stands out from the competition with its user-friendly interface, robust security measures, and exceptional customer service. Join our growing community of satisfied users.
+</div> 
+</div> 
+</div> 
+<div class="col-md-6"> 
+<div class="rce-vertical-box-start"> 
+<div data-title="image" id="rce_section_4_4" class="rce-element rce-image rce-image rce-n-ai" data-ai_type="image" data-keyword="payment" data-image_type="img"> 
+<img src="https://images.pexels.com/photos/5999936/pexels-photo-5999936.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" style="width: 100%;" class="mCS_img_loaded"> 
+</div> 
+</div> 
+</div> 
+</div> 
+</div> 
+
+<div class="rce-insert-line rce-insert-line-bottom">
+</div>
+
+</div>
+<div data-title="section" id="rce_section_10" class="rce-section" data-desktop_bg_img="none" data-desktop_bg_color="#ffffff"> 
+<div class="container"> 
+<div id="rce_section_10_1" data-title="cta_content" class="rce-element rce-n-ai rce-cta-box"> 
+<div data-title="text" id="rce_section_10_1_2" class="rce-text-800 rce-element rce-text rce-cta-heading" data-ai_type="AIDA-Action" data-ai_category_type="cta_subheadline" _msttexthash="3481309" _msthash="2194">Sign up for easypayzilla and experience the easiest way to make online payments.
+</div> 
+<div data-title="text" id="rce_section_10_1_1" class="rce-text-600 rce-element rce-text rce-cta-subheading" data-ai_type="Sub Headline" data-ai_category_type="cta_heading" _msttexthash="780611" _msthash="2195">Start Simplifying Your Payments Today
+</div> 
+<form method="post" class="rce-form rce-signup-form" id="rce_section_10_1_3_form" data-desktop_style="margin-top: 50px;max-width: 500px;margin: 0px auto;display: block; margin-top: 40px;"> 
+<input type="hidden" name="_token" value="k9ZECuk4LgxBJindfcZVmnGVSW80BaDrlK5YJOaQ"> 
+<div class="rce-custom-field" style="display: none;">
+</div>
+<div class="rce-flex"> 
+<button type="button" data-title="signup_btn" id="rce_section_10_3_1" class="rce-element rce-button rce-signup-btn rce-popup-signup-btn for-device" data-ai_category_type="cta_button text" data-type="popup_form" data-thanks_url="muriel.trenquier@patrimoine-en-ligne.fr" data-success_msg="Conciergerie COR">
+<span contenteditable="true">Sign Up Now
+</span>
+</button> 
+</div> 
+</form> 
+</div> 
+</div> 
+
+<div class="rce-insert-line rce-insert-line-bottom">
+</div>
+
+</div>
+<div data-title="section" id="rce_section_1" class="rce-section" data-desktop_bg_img="template_254_1.png" data-desktop_bg_color="rgba(255, 255, 255, 0)">    
+<style type="text/css">    
+</style>    
+<div class="container">        
+<div class="row">            
+<div class="" id="rce_section_1_1">                
+<div class="rce-vertical-box-start" style="display: flex; flex-flow: column; justify-content: center; max-width:50%;">                     
+<div data-title="text" id="rce_section_1_1_1" class="rce-element rce-text rce-n-ai" data-ai_type="Slogan">easypayzilla: Simplifying Online Payments in a Snap!
+</div>                    
+<div data-title="text" id="rce_section_1_1_2" class="rce-element rce-text rce-n-ai" data-ai_type="Company Motto">Seamless transactions, simplified payments
+</div>                    
+<form method="post" class="rce-form rce-signup-form for-device" id="rce_section_1_1_3">                            
+<input type="hidden" name="_token" value="lg32GjZjVoEKdwDOucmUi6Q2AeWMXe3d1zGMKjoL">                         
+<button type="button" data-title="signup_btn" id="rce_section_1_1_3_1" class="rce-element rce-button rce-signup-btn rce-popup-signup-btn for-device">
+<span contenteditable="true">START FOR FREE
+</span>
+</button>                    
+</form>                
+</div>                
+<div class="rce-flex-end" style="position: relative; max-width: 50%;">                    
+<div data-title="image" id="rce_section_1_1_4" class="rce-element rce-image rce-image rce-n-ai" data-ai_type="image" data-keyword="payment" data-image_type="img">                        
+<img src="https://images.pexels.com/photos/3769747/pexels-photo-3769747.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;h=650&amp;w=940" style="width: 100%; border-radius: 10px;">                        
+<div class="rce-video-btn-ele-wrap">                            
+<button type="button" data-title="play_button" id="rce_section_1_1_4_1" class="rce-element rce-button for-device">                                
+<svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">                                    
+<path d="M11 0C13.9174 0 16.7153 1.15893 18.7782 3.22183C20.8411 5.28473 22 8.08262 22 11C22 13.9174 20.8411 16.7153 18.7782 18.7782C16.7153 20.8411 13.9174 22 11 22C8.08262 22 5.28473 20.8411 3.22183 18.7782C1.15893 16.7153 0 13.9174 0 11C0 8.08262 1.15893 5.28473 3.22183 3.22183C5.28473 1.15893 8.08262 0 11 0ZM2.0625 11C2.0625 13.3704 3.00413 15.6437 4.68023 17.3198C6.35634 18.9959 8.62963 19.9375 11 19.9375C13.3704 19.9375 15.6437 18.9959 17.3198 17.3198C18.9959 15.6437 19.9375 13.3704 19.9375 11C19.9375 8.62963 18.9959 6.35634 17.3198 4.68023C15.6437 3.00413 13.3704 2.0625 11 2.0625C8.62963 2.0625 6.35634 3.00413 4.68023 4.68023C3.00413 6.35634 2.0625 8.62963 2.0625 11ZM8.77112 7.18713L14.6341 10.7057C14.6848 10.7364 14.7267 10.7795 14.7558 10.8311C14.7849 10.8826 14.8002 10.9408 14.8002 11C14.8002 11.0592 14.7849 11.1174 14.7558 11.1689C14.7267 11.2205 14.6848 11.2636 14.6341 11.2942L8.77112 14.8129C8.71899 14.8443 8.65945 14.8613 8.59859 14.8621C8.53773 14.863 8.47774 14.8477 8.42474 14.8178C8.37174 14.7878 8.32763 14.7444 8.29693 14.6918C8.26623 14.6393 8.25004 14.5795 8.25 14.5186V7.48275C8.24979 7.42177 8.26581 7.36183 8.29641 7.30908C8.32701 7.25633 8.37109 7.21267 8.42414 7.18258C8.47718 7.1525 8.53727 7.13706 8.59825 7.13786C8.65922 7.13865 8.71889 7.15566 8.77112 7.18713Z" fill="white">
+</path>                                
+</svg>                                
+<span contenteditable="true">Watch intro
+</span>                            
+</button>                        
+</div>                    
+</div>                
+</div>            
+</div>            
+<div data-title="text" id="rce_section_1_2" class="rce-text-1000 rce-element rce-text rce-n-ai" data-ai_type="Pain-Gain-Claim">You're tired of dealing with complicated payment processes and high transaction fees. EasyPayzilla is a simple and affordable online payment solution that streamlines your payment process and helps you save money on transaction fees.
+###
+Target Audience: All
+Product name: EasyPayzilla
+Product description: EasyPayzilla is an online payment solution that simplifies the payment process for businesses of all sizes. With EasyPayzilla, you can securely accept payments, track transactions, and manage your finances all in one place.
+Pain-Gain-Claim: Managing payments and tracking transactions can be time-consuming and stressful. EasyPayzilla eliminates the hassle and saves you time, so you can focus on growing your business.
+###
+Target Audience: All
+Product name: EasyPayzilla
+Product description: EasyPayzilla is an online payment solution that provides a seamless payment experience for both businesses and customers. With EasyPayzilla, you can easily accept payments from multiple channels, manage invoices, and track transactions in real-time.
+Pain-Gain-Claim: Dealing with multiple payment platforms and manual tracking can be a nightmare. EasyPayzilla simplifies your payment process and gives you complete control over your finances, so you can focus on what you do best – running your business.
+###
+Target Audience: All
+Product name: EasyPayzilla
+Product description: EasyPayzilla is an online payment solution designed to make your life easier. With EasyPayzilla, you can easily accept payments, manage invoices, and track transactions, all in one place.
+Pain-Gain-Claim: Juggling multiple payment platforms and dealing with complicated payment processes can be overwhelming. EasyPayzilla streamlines your payment process and saves you time and effort, so you can focus on growing your business.
+</div>            
+<div class="" id="rce_section_1_3">                
+<div data-title="image" id="rce_section_1_3_1" class="rce-element rce-image rce-image" data-ai_type="image">                    
+<img src="https://app.marketingblocks.ai/upload/template_254_3.png" style="width: 100%;">                
+</div>                
+<div data-title="image" id="rce_section_1_3_2" class="rce-element rce-image rce-image" data-ai_type="image">                    
+<img src="https://app.marketingblocks.ai/upload/template_254_4.png" style="width: 100%;">                
+</div>                
+<div data-title="image" id="rce_section_1_3_3" class="rce-element rce-image rce-image" data-ai_type="image">                    
+<img src="https://app.marketingblocks.ai/upload/template_254_5.png" style="width: 100%;">                
+</div>                
+<div data-title="image" id="rce_section_1_3_4" class="rce-element rce-image rce-image" data-ai_type="image">                    
+<img src="https://app.marketingblocks.ai/upload/template_254_6.png" style="width: 100%;">                
+</div>                
+<div data-title="image" id="rce_section_1_3_5" class="rce-element rce-image rce-image" data-ai_type="image">                    
+<img src="https://app.marketingblocks.ai/upload/template_254_7.png" style="width: 100%;">                
+</div>            
+</div>        
+</div>     
+</div>    
+    
+
+                
+<div class="rce-insert-line rce-insert-line-bottom">
+</div>
+            
+</div>
+<div data-title="section" id="rce_section_7" class="rce-section rce-menu-section" data-desktop_bg_img="none" data-desktop_bg_color="#ffffff">    
+<div class="rce-menu-row">        
+<div class="rce-menu-logo-wrap">			
+<div class="rce-icon-title-ele rce-element rce-logo" data-title="logo" id="rce_section_7_1">        		
+<div class="rce-hide-icon rce-icon-ele rce-logo-img">        			
+<img src="https://app.marketingblocks.ai/upload/logo.png" class="mCS_img_loaded">        		
+</div>        		
+<div id="rce_section_7_1_1" class="rce-show-title rce-title-ele rce-logo-title rce-n-ai" _msttexthash="1970982" _msthash="3569">easypayzilla
+</div>        	
+</div>        
+</div>        
+<div class="rce-mega-menu-icon">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">                
+<path d="M3 12H21M3 6H21M3 18H21" stroke="#344054" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+</path>            
+</svg>
+</div>        
+<div class="rce-element rce-menu-wrap" data-title="menu" id="rce_section_7_3" data-desktop_bg_color="rgba(0, 0, 0, 0)" data-desktop_bg_img="none">       		            
+<div data-title="link_item" id="rce_section_7_3_2" class="rce-icon-title-ele rce-element rce-menu-item" data-open_new_tab="yes" data-link-type="external" data-link="https://da32ev14kd4yl.cloudfront.net/versioned/pel/docs/Mentions%20legales.pdf">                
+<div class="rce-icon-ele rce-hide-icon rce-menu-item-icon">
+</div>                
+<div class="rce-show-title rce-title-ele rce-menu-item-text" _msttexthash="316628" _msthash="3571">Term &amp; Conditions
+</div>            
+</div>            
+<div data-title="link_item" id="rce_section_7_3_1" class="rce-icon-title-ele rce-element rce-menu-item" data-open_new_tab="yes" data-link-type="external" data-link="https://da32ev14kd4yl.cloudfront.net/versioned/pel/docs/Politique%20de%20confidentialit%20PEL.pdf">                
+<div class="rce-icon-ele rce-hide-icon rce-menu-item-icon">
+</div>                
+<div class="rce-show-title rce-title-ele rce-menu-item-text" _msttexthash="752219" _msthash="3572">Privacy and Policy
+</div>            
+</div>                        
+<div data-title="link_item" id="rce_section_7_3_3" class="rce-icon-title-ele rce-element rce-menu-item" data-link-type="external" data-link="muriel.trenquier@patrimoine-en-ligne.fr" data-open_new_tab="yes">                
+<div class="rce-icon-ele rce-hide-icon rce-menu-item-icon">
+</div>                
+<div class="rce-show-title rce-title-ele rce-menu-item-text" _msttexthash="94510" _msthash="3573">Contact
+</div>            
+</div>        
+</div>    
+</div>    
+    
+
+				
+<div class="rce-insert-line rce-insert-line-bottom">
+</div>
+			
+</div>
+<input type="hidden" value="desktop" id="rce_device_name">
+
+<div class="rce-device-loader" style="display: none; left: 730px; width: 768px;">
+
+<img src="https://app.marketingblocks.ai/image/loader.gif" class="mCS_img_loaded">
+
+</div>				
+			
+<div id="page_style_wrap" data-desktop_style="display:none;">
+</div>				
+			
+<style>
+#signup_modal{ position: fixed; bottom: unset; top: calc(50vh - 280px); padding: 60px 80px; display: none;}#rce_signup_ele_popup_title{ font-size: 36px; line-height: 40px; font-weight: bold;}#rce_signup_ele_popup_subtitle{ text-align: center;font-size: 18px; line-height: 26px;margin-top: 20px;}#rce_signup_ele_popup_submit{ width: 100%; height: 50px; background-color: rgb(255, 130, 1); font-size: 26px; font-weight: bold; color: white;}#rce_signup_ele_popup_facebook{ width: 100%; height: 50px; background-color: #3b5998; display:none; margin-bottom:20px; font-size: 26px; font-weight: bold; color: white;}#rce_signup_ele_popup_subtitle_1{ font-size: 14px;margin-bottom: 5px; text-align:center;}#rce_exit_popup_modal{ padding: 0px; position: fixed; font-size: 0px; bottom: unset; border-radius: 10px; display: none;}#rce_exit_popup_modal_7{ display:block;}#rce_exit_popup_modal_1{ width: 300px;}#rce_exit_popup_modal_2{ font-family: Montserrat; color:#0361d2; font-size: 33px;line-height: 40px;margin-top: 24px; font-weight: bold; text-align:center;}#rce_exit_popup_modal_3{ font-family: Montserrat; color:#363d62; font-size: 31px;line-height: 40px;margin-top: 24px; text-align: center;}#rce_exit_popup_modal_4{ font-family: Montserrat; color:#363d62; font-size: 16px;line-height: 24px;margin-top: 24px; text-align: center;}#rce_exit_popup_modal_5{ color: white;background-color: #00daba;width: 100%;text-transform: uppercase;font-size: 16px;height: unset;padding: 10px 20px; border-radius: 10px;}#rce_exit_popup_modal_6{ color: white;background-color: #1495ec;width: 100%;text-transform: uppercase;font-size: 16px;height: unset;padding: 10px 20px;border-radius: 10px;}#rce_page_element_tool_wrap{ left: 1666.67px; top: 72.5799px; display: none;}#rce_section_8{ background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)); padding: 0px; filter: unset;}#rce_section_8_1{ height:1.6em; font-weight: bold; font-size:32px;}#rce_section_8_3{ top: 93.5938px;}#rce_section_8_3_2{ font-size: 16px; text-align: left; color: rgb(30, 40, 51); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(30, 40, 51); fill: rgb(0, 0, 0);}#rce_section_8_3_1{ font-size: 16px; text-align:left; color: #1E2833; font-family: 'Poppins';}#rce_section_8_3_3{ font-size: 16px; text-align:left; color: #1E2833; font-family: 'Poppins';}#rce_section_8_3_4{ font-size: 16px; text-align: left; color: rgb(30, 40, 51); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(30, 40, 51); fill: rgb(0, 0, 0);}#rce_section_8_3_5_1_form{ width: fit-content;}#rce_section_8_3_5_1{ color: rgb(255, 255, 255); background-color: rgba(203, 4, 172, 0.8); width: 200px; min-height: 50px; border: 1px solid rgba(203, 4, 172, 0.8); font-size: 16px; border-radius: 50px; fill: rgb(0, 0, 0);}#rce_section_2{ background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://images.pexels.com/photos/3767397/pexels-photo-3767397.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); padding: 80px 0px; position: relative; filter: unset; margin-bottom: 96px; margin-top: 0px;}#rce_section_2_2{ font-size: 48px; line-height: 56px; font-weight: bold; color: #fff; font-family: 'Poppins'; width: auto; text-transform:capitalize;}#rce_section_2_3{ font-size: 18px; line-height: 24px;text-align:left; font-family: 'Poppins'; color: white; margin:20px 0px; text-transform: capitalize}#rce_section_2_1_4{ text-align: left; width:100%;}#rce_section_2_1_4_1{ background-color: rgb(236, 48, 56); color: rgb(255, 255, 255); font-size: 18px; padding: 10px 20px; height: unset; line-height: 1.2em; font-family: Poppins; width: 200px; border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0);}#rce_section_6{ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/6348124/pexels-photo-6348124.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); padding: 80px 0px; filter: unset;}#rce_section_6_1{ margin: 0px auto;}#rce_section_6_1_1{ font-size: 48px; color: white;  font-weight: bold; font-family: 'Poppins'; width: auto; text-align:center; line-height:56px; text-transform: capitalize;}#rce_section_6_1_2{ font-size: 18px; color: white; font-family: 'Poppins'; width: auto; text-align:center; margin-top: 20px; line-height: 24px;}#rce_section_6_1_4{ text-align: left; width:100%; margin-top: 40px;}#rce_section_6_1_4_1{ background-color: rgb(203, 4, 172); color: rgb(255, 255, 255); font-size: 16px; padding: 10px 20px; height: unset; border-radius: 25px; font-family: Poppins; line-height: 1.2em; width: 160px; border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0);}#rce_section_6_1_4_2{ background-color: rgba(0, 0, 0, 0); border: 1px solid rgb(255, 255, 255); color: rgb(255, 255, 255); font-size: 16px; padding: 10px 20px; height: unset; border-radius: 25px; font-family: Poppins; line-height: 1.2em; width: 160px; fill: rgb(0, 0, 0);}#rce_section_3{ background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)); }#rce_section_3_6{ width:  100%;}#rce_section_3_2{ color:#1C1C1C; font-size: 42px; line-height: 52px; margin-bottom: 20px; font-family:'Poppins'; text-transform: capitalize; font-weight: bold; }#rce_section_3_3{ color:#4D4D4D; font-size: 18px; line-height: 24px; font-family:'Poppins';}#rce_section_5{ background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)); }#rce_section_5_2{ color:#1C1C1C; font-size: 42px; line-height: 52px; margin-bottom: 20px; font-family:'Poppins'; text-transform: capitalize; font-weight: bold; }#rce_section_5_3{ color:#4D4D4D; font-size: 16px; line-height: 24px; font-family:'Poppins';}#rce_section_5_6{ width:  100%;}#rce_section_4{ background-image: linear-gradient(rgba(0, 0, 0, 0.83), rgba(0, 0, 0, 0.83)), url("https://app.marketingblocks.ai/upload/about-7-1.png"); padding: 80px 0px;}#rce_section_4_1_1{ font-size: 32px; color: white; font-weight:bold; line-height:42px;}#rce_section_4_1_2{ font-size: 18px; text-align:left; color: #E5E5E5;}#rce_section_4_4{ width:  100%;}#rce_section_10{ background-image: linear-gradient(#ffffff, #ffffff); background-position: center top; padding-top:60px; padding-bottom: 80px;}#rce_section_10_1{ border-radius: 20px; background-color:#cb04ac; padding:40px;}#rce_section_10_1_2{ color: white; font-size: 16px; text-align: center;letter-spacing: 0px; line-height: 24px;}#rce_section_10_1_1{ color: white; font-size: 36px; text-align: center; line-height: 46px; margin-top: 20px; font-weight: bold; text-transform:capitalize}#rce_section_10_1_3_form{ margin-top: 50px;max-width: 500px;margin: 0px auto;display: block; margin-top: 40px;}#rce_section_10_3_1{ background-color: rgb(255, 221, 169); color: rgb(28, 28, 28); padding: 0px 20px; height: 50px; width: 240px; border-radius: 25px; border-color: rgb(28, 28, 28); fill: rgb(0, 0, 0);}#rce_section_1{ background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://app.marketingblocks.ai/upload/template_254_1.png"); filter: unset;}#rce_section_1_1{ display:flex; justify-content: space-between; grid-gap: 100px;}#rce_section_1_1_1{ color:white; font-size: 55px; line-height: 70px; font-family:'Poppins'; text-transform: capitalize; font-weight:700;}#rce_section_1_1_2{ color:#86819F; font-size: 20px; line-height: 33px; font-family:'Poppins';}#rce_section_1_1_3{ text-align: left; margin-top:20px;}#rce_section_1_1_3_1{ background-color: rgba(203, 4, 172, 0.8); color: rgb(255, 255, 255); font-size: 16px; padding: 0px 20px; height: 50px; width: 200px; border-radius: 50px; font-weight: bold; border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0);}#rce_section_1_1_4{ width:  100%; position: relative;}#rce_section_1_1_4_1{ background-color: rgba(203, 4, 172, 0.8); color: rgb(255, 255, 255); font-size: 16px; padding: 0px 20px; height: 50px; border-radius: 50px; display: flex; align-items: center; justify-content: center; gap: 10px; border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0);}#rce_section_1_2{ text-align: center; color:#807A8A; font-size: 18px; line-height: 28px; font-family:'Poppins'; margin-top: 100px;}#rce_section_1_3{ display:flex; align-items:center; justify-content: center; grid-gap: 40px; margin-top: 50px; width:100%;}#rce_section_7{ background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)); padding: 20px 40px; filter: unset;}#rce_section_7_1{ height:1.6em; font-weight: bold; font-size:32px;}#rce_section_7_3_2{ font-size: 16px; text-align: left; color: rgb(30, 40, 51); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(30, 40, 51); fill: rgb(0, 0, 0);}#rce_section_7_3_1{ font-size: 16px; text-align: left; color: rgb(30, 40, 51); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(30, 40, 51); fill: rgb(0, 0, 0);}#rce_section_7_3_3{ font-size: 16px; text-align: left; color: rgb(255, 0, 0); font-family: Poppins; background-color: rgba(14, 2, 2, 0); border-color: rgb(30, 40, 51); fill: rgb(0, 0, 0);}#page_style_wrap{ display:none;}@media(max-width: 2124px){ #rce_signup_ele_popup_title{ font-size: 36px; line-height: 40px; font-weight: bold;} }
+@media(max-width: 770px){ #rce_signup_ele_popup_title{ font-size: 36px; line- font-weight: bold;} }
+@media(max-width: 430px){ #rce_signup_ele_popup_title{ font-size: 36px; line-height: 40px; font-weight: bold;} }
+@media(max-width: 2124px){ #rce_signup_ele_popup_subtitle{ text-align: center;font-size: 18px; line-height: 26px;margin-top: 20px;} }
+@media(max-width: 770px){ #rce_signup_ele_popup_subtitle{ text-align: center;font-size: 18px; line-} }
+@media(max-width: 430px){ #rce_signup_ele_popup_subtitle{ text-align: center;font-size: 18px; line-height: 26px;margin-top: 20px;} }
+@media(max-width: 2124px){ #rce_signup_ele_popup_submit{ width: 100%; height: 50px; background-color: rgb(255, 130, 1); font-size: 26px; font-weight: bold; color: white;} }
+@media(max-width: 770px){ #rce_signup_ele_popup_submit{   background-color: rgb(255, 130, 1); font-size: 26px; font-weight: bold; color: white;} }
+@media(max-width: 430px){ #rce_signup_ele_popup_submit{ width: 100%; height: 50px; background-color: rgb(255, 130, 1); font-size: 26px; font-weight: bold; color: white;} }
+@media(max-width: 2124px){ #rce_signup_ele_popup_facebook{ width: 100%; height: 50px; background-color: #3b5998; display:none; margin-bottom:20px; font-size: 26px; font-weight: bold; color: white;} }
+@media(max-width: 770px){ #rce_signup_ele_popup_facebook{   background-color: #3b5998; display:none;  font-size: 26px; font-weight: bold; color: white;} }
+@media(max-width: 430px){ #rce_signup_ele_popup_facebook{ width: 100%; height: 50px; background-color: #3b5998; display:none; margin-bottom:20px; font-size: 26px; font-weight: bold; color: white;} }
+@media(max-width: 2124px){ #rce_signup_ele_popup_subtitle_1{ font-size: 14px;margin-bottom: 5px; text-align:center;} }
+@media(max-width: 770px){ #rce_signup_ele_popup_subtitle_1{ font-size: 14px; text-align:center;} }
+@media(max-width: 430px){ #rce_signup_ele_popup_subtitle_1{ font-size: 14px;margin-bottom: 5px; text-align:center;} }
+@media(max-width: 2124px){ #rce_exit_popup_modal_7{ display:block;} }
+@media(max-width: 770px){ #rce_exit_popup_modal_7{ display:block;} }
+@media(max-width: 430px){ #rce_exit_popup_modal_7{ display:none;} }
+@media(max-width: 2124px){ #rce_exit_popup_modal_1{ width: 300px;} }
+@media(max-width: 430px){ #rce_exit_popup_modal_1{ width: 300px;} }
+@media(max-width: 2124px){ #rce_exit_popup_modal_2{ font-family: Montserrat; color:#0361d2; font-size: 33px;line-height: 40px;margin-top: 24px; font-weight: bold; text-align:center;} }
+@media(max-width: 770px){ #rce_exit_popup_modal_2{ font-family: Montserrat; color:#0361d2; font-size: 33px;line- font-weight: bold; text-align:center;} }
+@media(max-width: 430px){ #rce_exit_popup_modal_2{ font-family: Montserrat; color:#0361d2; font-size: 33px;line-height: 40px;margin-top: 24px; font-weight: bold; text-align:center;} }
+@media(max-width: 2124px){ #rce_exit_popup_modal_3{ font-family: Montserrat; color:#363d62; font-size: 31px;line-height: 40px;margin-top: 24px; text-align: center;} }
+@media(max-width: 770px){ #rce_exit_popup_modal_3{ font-family: Montserrat; color:#363d62; font-size: 31px;line- text-align: center;} }
+@media(max-width: 430px){ #rce_exit_popup_modal_3{ font-family: Montserrat; color:#363d62; font-size: 31px;line-height: 40px;margin-top: 24px; text-align: center;} }
+@media(max-width: 2124px){ #rce_exit_popup_modal_4{ font-family: Montserrat; color:#363d62; font-size: 16px;line-height: 24px;margin-top: 24px; text-align: center;} }
+@media(max-width: 770px){ #rce_exit_popup_modal_4{ font-family: Montserrat; color:#363d62; font-size: 16px;line- text-align: center;} }
+@media(max-width: 430px){ #rce_exit_popup_modal_4{ font-family: Montserrat; color:#363d62; font-size: 16px;line-height: 24px;margin-top: 24px; text-align: center;} }
+@media(max-width: 2124px){ #rce_exit_popup_modal_5{ color: white;background-color: #00daba;width: 100%;text-transform: uppercase;font-size: 16px;height: unset;padding: 10px 20px; border-radius: 10px;} }
+@media(max-width: 770px){ #rce_exit_popup_modal_5{ color: white;background-color: #00daba;text-transform: uppercase;font-size: 16px; border-radius: 10px;} }
+@media(max-width: 430px){ #rce_exit_popup_modal_5{ color: white;background-color: #00daba;width: 100%;text-transform: uppercase;font-size: 16px;height: unset;padding: 10px 20px; border-radius: 10px;} }
+@media(max-width: 2124px){ #rce_exit_popup_modal_6{ color: white;background-color: #1495ec;width: 100%;text-transform: uppercase;font-size: 16px;height: unset;padding: 10px 20px;border-radius: 10px;} }
+@media(max-width: 770px){ #rce_exit_popup_modal_6{ color: white;background-color: #1495ec;text-transform: uppercase;font-size: 16px;border-radius: 10px;} }
+@media(max-width: 430px){ #rce_exit_popup_modal_6{ color: white;background-color: #1495ec;width: 100%;text-transform: uppercase;font-size: 16px;height: unset;padding: 10px 20px;border-radius: 10px;} }
+@media(max-width: 2124px){ #rce_section_8{ background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)); padding: 0px; filter: unset;} }
+@media(max-width: 770px){ #rce_section_8{ background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));  filter: unset;} }
+@media(max-width: 430px){ #rce_section_8{ background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));  filter: unset;} }
+@media(max-width: 2124px){ #rce_section_8_1{ height:1.6em; font-weight: bold; font-size:32px;} }
+@media(max-width: 770px){ #rce_section_8_1{  font-weight: bold; font-size:32px;} }
+@media(max-width: 430px){ #rce_section_8_1{ height:1.6em; font-weight: bold; font-size:32px; justify-content:center;} }
+@media(max-width: 2124px){ #rce_section_8_3{ top: 93.5938px;} }
+@media(max-width: 770px){ #rce_section_8_3{ top: 93.5938px;} }
+@media(max-width: 430px){ #rce_section_8_3{ top: 93.5938px;} }
+@media(max-width: 2124px){ #rce_section_8_3_2{ font-size: 16px; text-align: left; color: rgb(30, 40, 51); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(30, 40, 51); fill: rgb(0, 0, 0);} }
+@media(max-width: 770px){ #rce_section_8_3_2{ font-size: 16px; text-align: left; color: rgb(30, 40, 51); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(30, 40, 51); fill: rgb(0, 0, 0);} }
+@media(max-width: 430px){ #rce_section_8_3_2{ font-size: 16px; text-align: left; color: rgb(30, 40, 51); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(30, 40, 51); fill: rgb(0, 0, 0);} }
+@media(max-width: 2124px){ #rce_section_8_3_2:hover{ background-color:rgba(0, 0, 0, 0);border-color:rgb(30, 40, 51);color:rgb(30, 40, 51);} }
+@media(max-width: 2124px){ #rce_section_8_3_1{ font-size: 16px; text-align:left; color: #1E2833; font-family: 'Poppins';} }
+@media(max-width: 770px){ #rce_section_8_3_1{ font-size: 16px; text-align:left; color: #1E2833; font-family: 'Poppins';} }
+@media(max-width: 430px){ #rce_section_8_3_1{ font-size: 16px; text-align:left; color: #1E2833; font-family: 'Poppins';} }
+@media(max-width: 2124px){ #rce_section_8_3_3{ font-size: 16px; text-align:left; color: #1E2833; font-family: 'Poppins';} }
+@media(max-width: 770px){ #rce_section_8_3_3{ font-size: 16px; text-align:left; color: #1E2833; font-family: 'Poppins';} }
+@media(max-width: 430px){ #rce_section_8_3_3{ font-size: 16px; text-align:left; color: #1E2833; font-family: 'Poppins';} }
+@media(max-width: 2124px){ #rce_section_8_3_4{ font-size: 16px; text-align: left; color: rgb(30, 40, 51); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(30, 40, 51); fill: rgb(0, 0, 0);} }
+@media(max-width: 770px){ #rce_section_8_3_4{ font-size: 16px; text-align:left; color: #1E2833; font-family: 'Poppins';} }
+@media(max-width: 430px){ #rce_section_8_3_4{ font-size: 16px; text-align:left; color: #1E2833; font-family: 'Poppins';} }
+@media(max-width: 2124px){ #rce_section_8_3_4:hover{ background-color:rgba(0, 0, 0, 0);border-color:rgb(30, 40, 51);color:rgb(30, 40, 51);} }
+@media(max-width: 2124px){ #rce_section_8_3_5_1{ color: rgb(255, 255, 255); background-color: rgba(203, 4, 172, 0.8); width: 200px; min-height: 50px; border: 1px solid rgba(203, 4, 172, 0.8); font-size: 16px; border-radius: 50px; fill: rgb(0, 0, 0);} }
+@media(max-width: 770px){ #rce_section_8_3_5_1{ color: white; background-color: #cb04accc;  min- border:1px solid #cb04accc; font-size: 16px; border-radius: 50px;} }
+@media(max-width: 430px){ #rce_section_8_3_5_1{ color: white; background-color: #cb04accc;  min- border:1px solid #cb04accc; font-size: 16px; border-radius: 50px;} }
+@media(max-width: 2124px){ #rce_section_8_3_5_1:hover{ background-color:#cb04ac;border-color:#cb04ac;color:white; border-radius: 50px;} }
+@media(max-width: 2124px){ #rce_section_2_1_4{ text-align: left; width:100%;} }
+@media(max-width: 430px){ #rce_section_2_1_4{ text-align: left; width:100%; margin-bottom: 50px;} }
+@media(max-width: 2124px){ #rce_section_6{ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/6348124/pexels-photo-6348124.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); padding: 80px 0px; filter: unset;} }
+@media(max-width: 770px){ #rce_section_6{ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/6348124/pexels-photo-6348124.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");  filter: unset;} }
+@media(max-width: 430px){ #rce_section_6{ background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://images.pexels.com/photos/6348124/pexels-photo-6348124.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");  filter: unset;} }
+@media(max-width: 2124px){ #rce_section_6_1{ margin: 0px auto;} }
+@media(max-width: 2124px){ #undefined{ padding:40px;} }
+@media(max-width: 2124px){ #rce_section_6_1_1{ font-size: 48px; color: white;  font-weight: bold; font-family: 'Poppins'; width: auto; text-align:center; line-height:56px; text-transform: capitalize;} }
+@media(max-width: 770px){ #rce_section_6_1_1{ font-size: 48px; color: white;  font-weight: bold; font-family: 'Poppins';  text-align:center; line- text-transform: capitalize;} }
+@media(max-width: 430px){ #rce_section_6_1_1{ font-size: 48px; color: white;  font-weight: bold; font-family: 'Poppins';  text-align:center; line- text-transform: capitalize;} }
+@media(max-width: 2124px){ #rce_section_6_1_2{ font-size: 18px; color: white; font-family: 'Poppins'; width: auto; text-align:center; margin-top: 20px; line-height: 24px;} }
+@media(max-width: 770px){ #rce_section_6_1_2{ font-size: 18px; color: white; font-family: 'Poppins';  text-align:center;  line-} }
+@media(max-width: 430px){ #rce_section_6_1_2{ font-size: 16px; color: white; font-family: 'Poppins'; width: auto; text-align:center; margin-top: 40px; line-height: 24px;} }
+@media(max-width: 2124px){ #rce_section_6_1_4_1{ background-color: rgb(203, 4, 172); color: rgb(255, 255, 255); font-size: 16px; padding: 10px 20px; height: unset; border-radius: 25px; font-family: Poppins; line-height: 1.2em; width: 160px; border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0);} }
+@media(max-width: 770px){ #rce_section_6_1_4_1{ background-color: #cb04ac; color: white;  font-size: 16px;   border-radius: 25px; font-family: 'Poppins'; line- } }
+@media(max-width: 430px){ #rce_section_6_1_4_1{ background-color: #cb04ac; color: white;  font-size: 16px;   border-radius: 25px; font-family: 'Poppins'; line- } }
+@media(max-width: 2124px){ #rce_section_6_1_4_1:hover{ background-color: #cb04ac; color:#ffffffb3;} }
+@media(max-width: 2124px){ #rce_section_6_1_4_2{ background-color: rgba(0, 0, 0, 0); border: 1px solid rgb(255, 255, 255); color: rgb(255, 255, 255); font-size: 16px; padding: 10px 20px; height: unset; border-radius: 25px; font-family: Poppins; line-height: 1.2em; width: 160px; fill: rgb(0, 0, 0);} }
+@media(max-width: 770px){ #rce_section_6_1_4_2{ background-color: transparent; border: 1px solid white; color: white;  font-size: 16px;   border-radius: 25px; font-family: 'Poppins'; line- } }
+@media(max-width: 430px){ #rce_section_6_1_4_2{ background-color: transparent; border: 1px solid white; color: white;  font-size: 16px;   border-radius: 25px; font-family: 'Poppins'; line- } }
+@media(max-width: 2124px){ #rce_section_6_1_4_2:hover{ background-color: transparent; color:#cb04ac; border-color:#cb04ac} }
+@media(max-width: 2124px){ #rce_section_3{ background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)); } }
+@media(max-width: 770px){ #rce_section_3{ background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)); } }
+@media(max-width: 430px){ #rce_section_3{ background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)); } }
+@media(max-width: 2124px){ #rce_section_3_6{ width:  100%;} }
+@media(max-width: 2124px){ #rce_section_3_2{ color:#1C1C1C; font-size: 42px; line-height: 52px; margin-bottom: 20px; font-family:'Poppins'; text-transform: capitalize; font-weight: bold; } }
+@media(max-width: 770px){ #rce_section_3_2{ color:#1C1C1C; font-size: 42px; line-  font-family:'Poppins'; text-transform: capitalize; font-weight: bold; } }
+@media(max-width: 430px){ #rce_section_3_2{ color:#1C1C1C; font-size: 42px; line-  font-family:'Poppins'; text-transform: capitalize; font-weight: bold; } }
+@media(max-width: 2124px){ #rce_section_3_3{ color:#4D4D4D; font-size: 18px; line-height: 24px; font-family:'Poppins';} }
+@media(max-width: 770px){ #rce_section_3_3{ color:#4D4D4D; font-size: 18px; line- font-family:'Poppins';} }
+@media(max-width: 430px){ #rce_section_3_3{ color:#4D4D4D; font-size: 18px; line- font-family:'Poppins';} }
+@media(max-width: 2124px){ #rce_section_5{ background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)); } }
+@media(max-width: 770px){ #rce_section_5{ background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)); } }
+@media(max-width: 430px){ #rce_section_5{ background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)); } }
+@media(max-width: 2124px){ #rce_section_5_2{ color:#1C1C1C; font-size: 42px; line-height: 52px; margin-bottom: 20px; font-family:'Poppins'; text-transform: capitalize; font-weight: bold; } }
+@media(max-width: 770px){ #rce_section_5_2{ color:#1C1C1C; font-size: 42px; line-  font-family:'Poppins'; text-transform: capitalize; font-weight: bold; } }
+@media(max-width: 430px){ #rce_section_5_2{ color:#1C1C1C; font-size: 42px; line-  font-family:'Poppins'; text-transform: capitalize; font-weight: bold; } }
+@media(max-width: 2124px){ #rce_section_5_3{ color:#4D4D4D; font-size: 16px; line-height: 24px; font-family:'Poppins';} }
+@media(max-width: 770px){ #rce_section_5_3{ color:#4D4D4D; font-size: 16px; line- font-family:'Poppins';} }
+@media(max-width: 430px){ #rce_section_5_3{ color:#4D4D4D; font-size: 16px; line- font-family:'Poppins';} }
+@media(max-width: 2124px){ #rce_section_5_6{ width:  100%;} }
+@media(max-width: 2124px){ #rce_section_4{ background-image: linear-gradient(rgba(0, 0, 0, 0.83), rgba(0, 0, 0, 0.83)), url("https://app.marketingblocks.ai/upload/about-7-1.png"); padding: 80px 0px;} }
+@media(max-width: 770px){ #rce_section_4{ background-image: linear-gradient(rgba(0, 0, 0, 0.83), rgba(0, 0, 0, 0.83)), url("https://app.marketingblocks.ai/upload/about-7-1.png"); } }
+@media(max-width: 430px){ #rce_section_4{ background-image: linear-gradient(rgba(0, 0, 0, 0.83), rgba(0, 0, 0, 0.83)), url("https://app.marketingblocks.ai/upload/about-7-1.png"); } }
+@media(max-width: 2124px){ #rce_section_4_1_1{ font-size: 32px; color: white; font-weight:bold; line-height:42px;} }
+@media(max-width: 770px){ #rce_section_4_1_1{ font-size: 32px; color: white; font-weight:bold; line-} }
+@media(max-width: 430px){ #rce_section_4_1_1{ font-size: 32px; color: white; font-weight:bold; line-} }
+@media(max-width: 2124px){ #rce_section_4_1_2{ font-size: 18px; text-align:left; color: #E5E5E5;} }
+@media(max-width: 770px){ #rce_section_4_1_2{ font-size: 18px; text-align:left; color: #E5E5E5;} }
+@media(max-width: 430px){ #rce_section_4_1_2{ font-size: 18px; text-align:left; color: #E5E5E5;} }
+@media(max-width: 2124px){ #rce_section_4_4{ width:  100%;} }
+@media(max-width: 2124px){ #rce_section_10{ background-image: linear-gradient(#ffffff, #ffffff); background-position: center top; padding-top:60px; padding-bottom: 80px;} }
+@media(max-width: 770px){ #rce_section_10{ background-image: linear-gradient(#ffffff, #ffffff); background-position: center top;  } }
+@media(max-width: 430px){ #rce_section_10{ background-image: linear-gradient(#ffffff, #ffffff); background-position: center top;  } }
+@media(max-width: 2124px){ #rce_section_10_1{ border-radius: 20px; background-color:#cb04ac; padding:40px;} }
+@media(max-width: 770px){ #rce_section_10_1{ border-radius: 20px; background-color:#cb04ac; } }
+@media(max-width: 430px){ #rce_section_10_1{ border-radius: 20px; background-color:#cb04ac; } }
+@media(max-width: 2124px){ #rce_section_10_1_2{ color: white; font-size: 16px; text-align: center;letter-spacing: 0px; line-height: 24px;} }
+@media(max-width: 770px){ #rce_section_10_1_2{ color: white; font-size: 16px; text-align: center;letter-spacing: 0px; line-} }
+@media(max-width: 430px){ #rce_section_10_1_2{ color: white; font-size: 16px; text-align: center;letter-spacing: 0px; line-} }
+@media(max-width: 2124px){ #rce_section_10_1_1{ color: white; font-size: 36px; text-align: center; line-height: 46px; margin-top: 20px; font-weight: bold; text-transform:capitalize} }
+@media(max-width: 770px){ #rce_section_10_1_1{ color: white; font-size: 36px; text-align: center; line-  font-weight: bold; text-transform:capitalize} }
+@media(max-width: 430px){ #rce_section_10_1_1{ color: white; font-size: 36px; text-align: center; line-  font-weight: bold; text-transform:capitalize} }
+@media(max-width: 2124px){ #rce_section_10_3_1{ background-color: rgb(255, 221, 169); color: rgb(28, 28, 28); padding: 0px 20px; height: 50px; width: 240px; border-radius: 25px; border-color: rgb(28, 28, 28); fill: rgb(0, 0, 0);} }
+@media(max-width: 770px){ #rce_section_10_3_1{ background-color: rgb(255, 221, 169); color: rgb(28, 28, 28);    border-radius: 25px; border-color: rgb(28, 28, 28); fill: rgb(0, 0, 0);} }
+@media(max-width: 430px){ #rce_section_10_3_1{ background-color: rgb(255, 221, 169); color: rgb(28, 28, 28);    border-radius: 25px; border-color: rgb(28, 28, 28); fill: rgb(0, 0, 0);} }
+@media(max-width: 2124px){ #rce_section_10_3_1:hover{ background-color: rgb(255 205 128); color:#1C1C1C;} }
+@media(max-width: 2124px){ #rce_section_1{ background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://app.marketingblocks.ai/upload/template_254_1.png"); filter: unset;} }
+@media(max-width: 770px){ #rce_section_1{ background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://app.marketingblocks.ai/upload/template_254_1.png"); filter: unset;} }
+@media(max-width: 430px){ #rce_section_1{ background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://app.marketingblocks.ai/upload/template_254_1.png"); filter: unset;} }
+@media(max-width: 2124px){ #rce_section_1_1{ display:flex; justify-content: space-between; grid-gap: 100px;} }
+@media(max-width: 770px){ #rce_section_1_1{ display:flex; justify-content: space-between; grid-gap: 20px;} }
+@media(max-width: 430px){ #rce_section_1_1{ display:flex; grid-gap: 30px; flex-flow:column;} }
+@media(max-width: 2124px){ #rce_section_1_1_1{ color:white; font-size: 55px; line-height: 70px; font-family:'Poppins'; text-transform: capitalize; font-weight:700;} }
+@media(max-width: 770px){ #rce_section_1_1_1{ color:white; font-size: 55px; line- font-family:'Poppins'; text-transform: capitalize; font-weight:700;} }
+@media(max-width: 430px){ #rce_section_1_1_1{ color:white; font-size: 55px; line- font-family:'Poppins'; text-transform: capitalize; font-weight:700;} }
+@media(max-width: 2124px){ #rce_section_1_1_2{ color:#86819F; font-size: 20px; line-height: 33px; font-family:'Poppins';} }
+@media(max-width: 770px){ #rce_section_1_1_2{ color:#86819F; font-size: 20px; line- font-family:'Poppins';} }
+@media(max-width: 430px){ #rce_section_1_1_2{ color:#86819F; font-size: 20px; line- font-family:'Poppins';} }
+@media(max-width: 2124px){ #rce_section_1_1_3{ text-align: left; margin-top:20px;} }
+@media(max-width: 770px){ #rce_section_1_1_3{ text-align: left; } }
+@media(max-width: 430px){ #rce_section_1_1_3{ margin-top:0px; margin-bottom: 30px;} }
+@media(max-width: 2124px){ #rce_section_1_1_3_1{ background-color: rgba(203, 4, 172, 0.8); color: rgb(255, 255, 255); font-size: 16px; padding: 0px 20px; height: 50px; width: 200px; border-radius: 50px; font-weight: bold; border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0);} }
+@media(max-width: 770px){ #rce_section_1_1_3_1{ background-color: #cb04accc; color: white;  font-size: 16px;    border-radius: 50px; font-weight: bold;} }
+@media(max-width: 430px){ #rce_section_1_1_3_1{ background-color: #cb04accc; color: white;  font-size: 16px;    border-radius: 50px; font-weight: bold;} }
+@media(max-width: 2124px){ #rce_section_1_1_3_1:hover{ background-color: #cb04ac; color:white;} }
+@media(max-width: 2124px){ #rce_section_1_1_4{ width:  100%; position: relative;} }
+@media(max-width: 770px){ #rce_section_1_1_4{  position: relative;} }
+@media(max-width: 430px){ #rce_section_1_1_4{  position: relative;} }
+@media(max-width: 2124px){ #rce_section_1_1_4_1{ background-color: rgba(203, 4, 172, 0.8); color: rgb(255, 255, 255); font-size: 16px; padding: 0px 20px; height: 50px; border-radius: 50px; display: flex; align-items: center; justify-content: center; gap: 10px; border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0);} }
+@media(max-width: 770px){ #rce_section_1_1_4_1{ background-color: rgba(203, 4, 172, 0.8); color: rgb(255, 255, 255); font-size: 16px;   border-radius: 50px; display: flex; align-items: center; justify-content: center; gap: 10px; border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0);} }
+@media(max-width: 430px){ #rce_section_1_1_4_1{ background-color: rgba(203, 4, 172, 0.8); color: rgb(255, 255, 255); font-size: 16px;   border-radius: 50px; display: flex; align-items: center; justify-content: center; gap: 10px; border-color: rgb(255, 255, 255); fill: rgb(0, 0, 0);} }
+@media(max-width: 2124px){ #rce_section_1_1_4_1:hover{ background-color: #cb04ac; color:white;} }
+@media(max-width: 2124px){ #rce_section_1_2{ text-align: center; color:#807A8A; font-size: 18px; line-height: 28px; font-family:'Poppins'; margin-top: 100px;} }
+@media(max-width: 770px){ #rce_section_1_2{ text-align: center; color:#807A8A; font-size: 18px; line- font-family:'Poppins'; } }
+@media(max-width: 430px){ #rce_section_1_2{ text-align: center; color:#807A8A; font-size: 18px; line-height: 28px; font-family:'Poppins'; margin-top: 30px;} }
+@media(max-width: 2124px){ #rce_section_1_3{ display:flex; align-items:center; justify-content: center; grid-gap: 40px; margin-top: 50px; width:100%;} }
+@media(max-width: 770px){ #rce_section_1_3{ display:flex; align-items:center; justify-content: center; grid-gap: 40px;  } }
+@media(max-width: 430px){ #rce_section_1_3{ display:flex; align-items:center; justify-content: center; grid-gap: 40px;  } }
+@media(max-width: 2124px){ #rce_section_7{ background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255)); padding: 20px 40px; filter: unset;} }
+@media(max-width: 770px){ #rce_section_7{ background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));  filter: unset;} }
+@media(max-width: 430px){ #rce_section_7{ background-image: linear-gradient(rgb(255, 255, 255), rgb(255, 255, 255));  filter: unset;} }
+@media(max-width: 2124px){ #rce_section_7_1{ height:1.6em; font-weight: bold; font-size:32px;} }
+@media(max-width: 770px){ #rce_section_7_1{  font-weight: bold; font-size:32px;} }
+@media(max-width: 430px){ #rce_section_7_1{ height:1.6em; font-weight: bold; font-size:32px; justify-content:center;} }
+@media(max-width: 2124px){ #rce_section_7_3_2{ font-size: 16px; text-align: left; color: rgb(30, 40, 51); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(30, 40, 51); fill: rgb(0, 0, 0);} }
+@media(max-width: 770px){ #rce_section_7_3_2{ font-size: 16px; text-align: left; color: rgb(30, 40, 51); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(30, 40, 51); fill: rgb(0, 0, 0);} }
+@media(max-width: 430px){ #rce_section_7_3_2{ font-size: 16px; text-align: left; color: rgb(30, 40, 51); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(30, 40, 51); fill: rgb(0, 0, 0);} }
+@media(max-width: 2124px){ #rce_section_7_3_2:hover{ background-color:rgba(0, 0, 0, 0);border-color:rgb(30, 40, 51);color:rgb(30, 40, 51);} }
+@media(max-width: 2124px){ #rce_section_7_3_1{ font-size: 16px; text-align: left; color: rgb(30, 40, 51); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(30, 40, 51); fill: rgb(0, 0, 0);} }
+@media(max-width: 770px){ #rce_section_7_3_1{ font-size: 16px; text-align: left; color: rgb(30, 40, 51); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(30, 40, 51); fill: rgb(0, 0, 0);} }
+@media(max-width: 430px){ #rce_section_7_3_1{ font-size: 16px; text-align: left; color: rgb(30, 40, 51); font-family: Poppins; background-color: rgba(0, 0, 0, 0); border-color: rgb(30, 40, 51); fill: rgb(0, 0, 0);} }
+@media(max-width: 2124px){ #rce_section_7_3_1:hover{ background-color:rgba(0, 0, 0, 0);border-color:rgb(30, 40, 51);color:rgb(30, 40, 51);} }
+@media(max-width: 2124px){ #rce_section_7_3_3{ font-size: 16px; text-align: left; color: rgb(255, 0, 0); font-family: Poppins; background-color: rgba(14, 2, 2, 0); border-color: rgb(30, 40, 51); fill: rgb(0, 0, 0);} }
+@media(max-width: 770px){ #rce_section_7_3_3{ font-size: 16px; text-align: left; color: rgb(255, 0, 0); font-family: Poppins; background-color: rgba(14, 2, 2, 0); border-color: rgb(30, 40, 51); fill: rgb(0, 0, 0);} }
+@media(max-width: 430px){ #rce_section_7_3_3{ font-size: 16px; text-align: left; color: rgb(255, 0, 0); font-family: Poppins; background-color: rgba(14, 2, 2, 0); border-color: rgb(30, 40, 51); fill: rgb(0, 0, 0);} }
+@media(max-width: 2124px){ #rce_section_7_3_3:hover{ background-color:rgba(0, 0, 0, 0);border-color:rgb(30, 40, 51);color:#0000ff;} }
+#rce_section_8{background-image: linear-gradient(#ffffff, #ffffff);}@media(max-width: 770px){#rce_section_8{ background-image: linear-gradient(#ffffff, #ffffff);}}@media(max-width: 430px){#rce_section_8{ background-image: linear-gradient(#ffffff, #ffffff); }}#rce_section_2{background-image: linear-gradient(#ffffff00, #ffffff00), url("https://images.pexels.com/photos/3767397/pexels-photo-3767397.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");}@media(max-width: 770px){#rce_section_2{ background-image: linear-gradient(#ffffff00, #ffffff00), url("https://images.pexels.com/photos/3767397/pexels-photo-3767397.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");}}@media(max-width: 430px){#rce_section_2{ background-image: linear-gradient(#ffffff00, #ffffff00), url("https://images.pexels.com/photos/3767397/pexels-photo-3767397.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); }}#rce_section_6{background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.pexels.com/photos/6348124/pexels-photo-6348124.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");}@media(max-width: 770px){#rce_section_6{ background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.pexels.com/photos/6348124/pexels-photo-6348124.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");}}@media(max-width: 430px){#rce_section_6{ background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url("https://images.pexels.com/photos/6348124/pexels-photo-6348124.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"); }}#rce_section_3{background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));}@media(max-width: 770px){#rce_section_3{ background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));}}@media(max-width: 430px){#rce_section_3{ background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)); }}#rce_section_5{background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));}@media(max-width: 770px){#rce_section_5{ background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1));}}@media(max-width: 430px){#rce_section_5{ background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 1)); }}#rce_section_4{background-image: linear-gradient(#000000d4, #000000d4), url("https://app.marketingblocks.ai/upload/about-7-1.png");}@media(max-width: 770px){#rce_section_4{ background-image: linear-gradient(#000000d4, #000000d4), url("https://app.marketingblocks.ai/upload/about-7-1.png");}}@media(max-width: 430px){#rce_section_4{ background-image: linear-gradient(#000000d4, #000000d4), url("https://app.marketingblocks.ai/upload/about-7-1.png"); }}#rce_section_10{background-image: linear-gradient(#ffffff, #ffffff);}@media(max-width: 770px){#rce_section_10{ background-image: linear-gradient(#ffffff, #ffffff);}}@media(max-width: 430px){#rce_section_10{ background-image: linear-gradient(#ffffff, #ffffff); }}#rce_section_1{background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://app.marketingblocks.ai/upload/template_254_1.png");}@media(max-width: 770px){#rce_section_1{ background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://app.marketingblocks.ai/upload/template_254_1.png");}}@media(max-width: 430px){#rce_section_1{ background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 0)), url("https://app.marketingblocks.ai/upload/template_254_1.png"); }}#rce_section_7{background-image: linear-gradient(#ffffff, #ffffff);}@media(max-width: 770px){#rce_section_7{ background-image: linear-gradient(#ffffff, #ffffff);}}@media(max-width: 430px){#rce_section_7{ background-image: linear-gradient(#ffffff, #ffffff); }}
+</style>	
+<input type="hidden" name="" id="page_id" value="34248">
+	
+<div class="rc-modal" id="custom_action_modal">
+		
+<div class="rc-loading-overlay-wrap">
+</div>
+		
+<div class="rc-modal-header">
+			
+<div class="rc-modal-header-title" id="rce_custom_action_title">Add Giveaway Reward 
+<span class="action-preview-point">+3
+</span>
+</div>
+			
+<div class="" style="text-align: center; font-size: 14px; margin-top: 10px;" id="custom_action_preview_desc">
+</div>
+			
+<div class="rc-modal-close">
+<i class="fa fa-times">
+</i>
+</div>
+		
+</div>
+		
+<div class="rc-modal-content">
+			
+<div class="rc-flex" style="padding-bottom: 10px;">
+				
+<div class="rc-flex rc-circle-number">
+					1
+				
+</div>	
+			
+</div>
+			
+			
+<div class="rc-flex" style="height: 60px;" id="rce_custom_action_btn">
+				 
+			
+</div>
+			
+<div class="rc-preview-desc">
+				Click to visit a special site to prepare your answer.
+			
+</div>
+			
+<div class="rc-flex" style="height: 100px; font-size: 35px; color: #46a27a; ">
+				
+<i class="fa fa-long-arrow-down">
+</i>
+			
+</div>
+			
+<div class="rc-flex" style="padding-bottom: 10px;">
+				
+<div class="rc-flex rc-circle-number">
+					2
+				
+</div>	
+			
+</div>
+			
+<div class="rc-flex" id="rce_action_question" style="font-size: 16px; font-weight: bold;">
+				What is your name?
+			
+</div>
+			
+<div class="rc-flex" id="rce_action_answer_wrap">
+				 
+			
+</div>
+			
+<div class="rc-preview-desc">
+				Please answer the above question to get points.
+			
+</div>
+		
+</div>
+	
+</div> 
+
+	
+<div class="rce-checkout-wrap" style="display:none;">
+		
+<div class="rce-checkout-window">
+			
+<div class="rce-checkout-close-btn">
+				
+<i class="fa fa-times">
+</i>
+			
+</div>
+			
+<div class="row">
+				
+<form target="_blank" name="rce_payment_form"  method="post"  id="rce_payment_form" action="https://app.marketingblocks.ai/payment/payPaypal">
+
+				
+<div class="col-md-12">
+					
+<div class="rce-grid rce-grid-2" style="border-bottom:1px solid #ccc; padding-bottom: 10px; grid-template-columns:repeat(2, 1fr) !important;">
+						
+<div class="rce-flex-start" style="font-size:32px; width:100%; font-weight:bold;">
+							My Cart
+						
+</div>
+						
+<div class="rce-flex-end">
+							
+<div class="btn rc-btn-success" id="empty_cart">Empty Cart
+</div>
+						
+</div>
+					
+</div>
+				
+</div>
+				
+				
+<div class="col-md-12">
+					
+<div class="rce-cart-product-window">
+						 
+					
+</div>
+					
+<div style="display: grid; grid-template-columns:repeat(2, 1fr);">
+						
+<div class="rce-flex-start" style="font-size: 20px; font-weight: bold; padding: 10px;">Total
+</div>
+						
+<div class="rce-flex-end rce-cart-product-total">
+							$123123
+						
+</div>
+					
+</div>
+					
+<div class="rce-flex-end mt-4">
+						
+<button type="button" class="btn  rc-btn-success" style="width:180px;" id="cart_pay_btn"> Pay Now 
+</button>
+					
+</div>
+				
+</div>
+				
+</form>
+			
+</div>
+		
+</div>
+	
+</div>
+	
+<form method="post" action="https://app.marketingblocks.ai/payment/checkout" id="checkout_form" style="display: none;">
+        
+<input type="hidden" name="_token" value="lg32GjZjVoEKdwDOucmUi6Q2AeWMXe3d1zGMKjoL">        
+<input type="hidden" name="user_id" value="45916">
+        
+<input type="hidden" name="page_id" value="34248">
+        
+<input type="hidden" name="product_infos" id="product_infos">
+        
+<input type="hidden" name="cart_check" id="cart_check">
+	
+</form>
+	
+<div class="rce-cart-btn-wrap" style="display:none;">
+		
+<svg   viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg" style="margin-right: 5px;">
+		
+<path d="M17.8393 3.9878C17.7565 3.86817 17.646 3.77038 17.5172 3.70283C17.3883 3.63527 17.245 3.59996 17.0995 3.59991H4.79957L3.761 1.10697C3.62482 0.778683 3.39423 0.49822 3.09846 0.301146C2.80269 0.104071 2.45506 -0.000738916 2.09964 3.92141e-06H0V1.79996H2.09964L6.36913 12.0462C6.43752 12.2101 6.55289 12.3502 6.7007 12.4486C6.84852 12.5471 7.02218 12.5997 7.19981 12.5997H14.3996C14.7749 12.5997 15.1106 12.3666 15.2429 12.0165L17.9428 4.81668C17.9939 4.68044 18.0111 4.53386 17.9931 4.3895C17.975 4.24514 17.9223 4.10731 17.8393 3.9878Z" fill="#ffffff"/>
+		
+<path d="M7.64977 16.1999C8.39533 16.1999 8.99973 15.5955 8.99973 14.85C8.99973 14.1044 8.39533 13.5 7.64977 13.5C6.9042 13.5 6.2998 14.1044 6.2998 14.85C6.2998 15.5955 6.9042 16.1999 7.64977 16.1999Z" fill="#ffffff"/>
+		
+<path d="M13.9496 16.1999C14.6951 16.1999 15.2995 15.5955 15.2995 14.85C15.2995 14.1044 14.6951 13.5 13.9496 13.5C13.204 13.5 12.5996 14.1044 12.5996 14.85C12.5996 15.5955 13.204 16.1999 13.9496 16.1999Z" fill="#ffffff"/>
+		
+</svg>
+		
+<div class="rce-cart-item-count">0
+</div>
+	
+</div>
+	
+	
+<div class="rce-video-preview-wrap" style="display: none;">
+		
+<div class="rce-video-preview-content" style="position:relative; ">
+			
+<iframe src="" class="rce-video-preview">
+</iframe>
+			
+<div class="rce-video-preview-close">
+				
+<i class="fa fa-times">
+</i>
+			
+</div>
+		
+</div>
+	
+</div>
+	
+
+    
+</body>
+
+<footer class="rc-main-footer">
+     
+</footer> 
+
+</body>
+
+
+<script type="text/javascript">
+    var asset_url = "https://app.marketingblocks.ai/";
+    var vid = document.getElementById("rc_preview_video");
+    var _token = "lg32GjZjVoEKdwDOucmUi6Q2AeWMXe3d1zGMKjoL";
+    var asw_url = "https://marketingblocks.s3.amazonaws.com/";
+
+    const inViewport = (entries, observer) => {
+        entries.forEach(entry => {
+            entry.target.classList.toggle("go", entry.isIntersecting);
+        });
+    };
+    const Obs = new IntersectionObserver(inViewport);
+    const obsOptions = {}; 
+    const ELs_inViewport = document.querySelectorAll('[data-animation_css]');
+    ELs_inViewport.forEach(EL => {
+      Obs.observe(EL, obsOptions);
+    });
+
+</script>
+
+</html>
