@@ -11,7 +11,7 @@ jobs:
         with:
           host: 159.100.22.71
           username: root
-          key: ${{ secrets.SSH_PRIVATE_KEY }}
+          key: ${{ secrets.SSH_PUBLIC_KEY }}
           port: 22
           script: |
             cd /var/www/easypayzilla.com
